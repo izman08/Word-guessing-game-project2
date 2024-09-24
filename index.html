@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js"></script>
+   
+
+    <div class="game-container">
+        <h1>Word Guessing Game</h1>
+        <h2> Fruits Guesser</h2>
+        <div id="wordDisplay">_ _ _ _ _</div>
+
+        <div class="input-container">
+            <input type="text" id="letterInput" maxlength="1" placeholder="Guess a letter">
+            <button class="game-btn" onclick="guessLetter()">Guess</button>
+        </div>
+
+        <p class="guessed-letters">Guessed letters: <span id="guessedLetters"></span></p>
+        <p id="message"></p>
+
+        <button class="game-btn" onclick="resetGame()">Restart Game</button>
+    </div>
+</body>
+</html>
+ 
